@@ -16,7 +16,7 @@
 - tag taggings
   - acts_as_taggable使用
 
-- user（権限者）
+- admin_user（権限者）
   - name
   - email
 
