@@ -2,7 +2,7 @@
 
 ## model
 
-- model
+- subject
   - name
   - company
   - occupation（職業）
