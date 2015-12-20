@@ -11,7 +11,7 @@
 - thumnail
   - image
   - status
-  - model_id
+  - subject_id
 
 - tag taggings
   - acts_as_taggable使用
