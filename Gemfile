@@ -50,3 +50,6 @@ end
 gem 'carrierwave'
 gem 'acts-as-taggable-on', '~> 3.4'
 gem 'kaminari'
+gem 'haml-rails'
+gem 'erb2haml'
+gem 'rmagick'
