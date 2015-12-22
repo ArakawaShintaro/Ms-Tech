@@ -11,6 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20151218180058) do
+
+  create_table "subjects", force: :cascade do |t|
+    t.string   "name",       limit: 255
+    t.string   "company",    limit: 255
+    t.string   "occupation", limit: 255
+    t.string   "position",   limit: 255
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "thumnails", force: :cascade do |t|
+    t.string   "image",      limit: 255
+    t.integer  "status",     limit: 4
+    t.integer  "subject_id", limit: 4
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
