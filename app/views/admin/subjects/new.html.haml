@@ -1,8 +1,7 @@
 = form_for([:admin, @subject]) do |sf|
-  .h1 投稿画面
   .col-md-8.col-md-offset-2
     %header.row.user-nav.row
-      .col-md-12
+      .col-md-12.proto-new
         = sf.text_field :name, placeholder: "名前", class: "proto-new-title"
         = sf.text_field :company, placeholder: "会社", class: "proto-new-title"
         = sf.text_field :occupation, placeholder: "職業", class: "proto-new-title"
@@ -10,11 +9,13 @@
     .row
       .col-md-12
         .cover-image-upload#main-image
+          %h4 MAIN
           = sf.fields_for :thumnails do |im|
             = im.file_field :image
             = im.hidden_field :status, value: "main"
       .col-md-12
         %ul.proto-sub-list.list-group
+          %h4 SUB
           = sf.fields_for :thumnails do |im|
             %li.list-group-item.col-md-4
               .image-upload#sub-image1
@@ -45,4 +46,4 @@
               .image-upload#sub-image2
                 = im.file_field :image
                 = im.hidden_field :status, value: "sub"
-        = sf.submit "Publish"
+        = sf.submit "Publish", class: "btn btn-warning "
