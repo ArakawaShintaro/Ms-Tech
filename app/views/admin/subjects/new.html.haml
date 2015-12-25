@@ -16,29 +16,10 @@
       .col-md-12
         %ul.proto-sub-list.list-group
           %h4 SUB
+          -# 開発段階では２枚何枚にするかは後で決める
           = sf.fields_for :thumnails do |im|
             %li.list-group-item.col-md-4
               .image-upload#sub-image1
-                = im.file_field :image
-                = im.hidden_field :status, value: "sub"
-          = sf.fields_for :thumnails do |im|
-            %li.list-group-item.col-md-4
-              .image-upload#sub-image2
-                = im.file_field :image
-                = im.hidden_field :status, value: "sub"
-          = sf.fields_for :thumnails do |im|
-            %li.list-group-item.col-md-4
-              .image-upload#sub-image2
-                = im.file_field :image
-                = im.hidden_field :status, value: "sub"
-          = sf.fields_for :thumnails do |im|
-            %li.list-group-item.col-md-4
-              .image-upload#sub-image2
-                = im.file_field :image
-                = im.hidden_field :status, value: "sub"
-          = sf.fields_for :thumnails do |im|
-            %li.list-group-item.col-md-4
-              .image-upload#sub-image2
                 = im.file_field :image
                 = im.hidden_field :status, value: "sub"
           = sf.fields_for :thumnails do |im|
