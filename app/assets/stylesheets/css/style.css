@@ -11,28 +11,47 @@ body {
 	color: white;
 }
 
+.clearfix :after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
 header {
-	line-height: 15em;
+	line-height: 1.5em;
 	text-align: center;
-	background: #333;
+	background: #FE4444;
+}
+
+.headerInner {
+	margin: 0 auto;
+  padding: 29px 0 27px;
+}
+
+
+#headerSns {
+	float: right;
+}
+
+.sns {
+	float: left;
+	margin-right: 10px;
 }
 
 article {
-	line-height: 20em;
+	line-height: 1.5em;
 	text-align: center;
 	background: #666;
 }
 
 aside {
-	line-height: 20em;
+	line-height: 1.5em;
 	text-align: center;
 	background: #999;
 }
 
 footer {
-	line-height: 15em;
+	line-height: 1.5em;
 	text-align: center;
 	background: #BBB;
 }
-
- 
