@@ -1,6 +1,10 @@
 # DB設計
 
 ## model
+- article
+  - title
+  - subject_id
+  - content
 
 - subject
   - name

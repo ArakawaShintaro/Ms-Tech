@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  root 'articles#index'
+
+  resources :articles, only: [:show]
+
   namespace :admin do
     resources :subjects, only: [:new, :create, :edit, :update, :destroy]
   end
