@@ -46,3 +46,27 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+h1 {
+  display: block;
+  margin: 0.67em 0; /* Webkit, Firefoxは、margin-before: 0.67em; margin-after: 0.67em; */
+  font-size: 2em;
+  font-weight: bold;
+  page-break-after: avoid; /* IEのみ */
+}
+
+h2 {
+  display: block;
+  margin: 0.83em 0; /* Webkit, Firefoxは、margin-before: 0.83em; margin-after: 0.83em; */
+  font-size: 1.5em;
+  font-weight: bold;
+  page-break-after: avoid; /* IEのみ */
+}
+
+h3 {
+  display: block;
+  margin: 1em 0; /* Webkit, Firefoxは、margin-before: 1em; margin-after: 1em; */
+  font-size: 1.17em;
+  font-weight: bold;
+  page-break-after: avoid; /* IEのみ */
+}
