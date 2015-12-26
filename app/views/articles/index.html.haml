@@ -1,2 +1,38 @@
-%h1 Articles#index
-%p Find me in app/views/articles/index.html.haml
+.content.clearfix.row
+  .new_content.clearfix.col.span_8
+    %h3
+      %span
+        ☆おすすめ記事
+    %article.col.row
+      = link_to '', '#'
+      .new_article.col.span_6
+        %p.photo
+          = image_tag("http://www.vocarus.net/img/ed1a638dabace57a846b599cc64a9060.jpg")
+        .articleTitle.col.row
+          %p
+            ここにタイトルが入る
+      .new_article.col.span_6
+        %p.photo
+          = image_tag("http://data1.whicdn.com/images/85652057/large.jpg")
+        .articleTitle.col.row
+          %p
+            ハーマイオニー・グレンジャー
+    %article.col.row
+      .new_article.col.span_6
+        = image_tag("http://data3.whicdn.com/images/80885717/large.jpg")
+        .articleTitle.col.row
+          %p
+            スーパー高校生プログラマ
+      .new_article.col.span_6
+        content
+  %aside.col.span_4{ role: "complimentary" }
+    %h3.rankingTitle
+      ☆人気の記事一覧
+    %ul.ranking
+      %li.rankinglist
+        content
+      %li.rankinglist
+        content
+      %li.rankinglist
+        content
+
