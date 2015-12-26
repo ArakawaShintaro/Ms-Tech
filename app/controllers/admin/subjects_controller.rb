@@ -10,7 +10,7 @@ class Admin::SubjectsController < ApplicationController
     if @subject.save
       redirect_to new_admin_subject_path, success: 'Success!'
     else
-      render :new, warning: 'Failure!'
+      redirect_to new_admin_subject_path, warning: 'Failure!'
     end
   end
 
