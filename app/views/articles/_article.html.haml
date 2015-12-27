@@ -1,0 +1,5 @@
+.new_article.col.span_6
+  = link_to image_tag("#{article.subject.thumnails.main.first.image}", class: "photo"), article_path(article)
+  .articleTitle.col.row
+    %p
+      = article.title
