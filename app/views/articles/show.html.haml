@@ -1,2 +1,27 @@
-%h1 Articles#show
-%p Find me in app/views/articles/show.html.haml
+.content.clearfix.row
+  .new_content.clearfix.col.span_8
+    %article.col.row
+      = link_to '', '#'
+      .show_article.col.row
+        %p.photo
+          = image_tag("http://www.vocarus.net/img/ed1a638dabace57a846b599cc64a9060.jpg")
+      .show_article_title.col.row
+        %h2
+          同志社大学 | 下谷地麻美 | プログラマー
+        %p.date
+          2015/10/22
+        %ul.clearfix
+          %li.sns_botton twitter
+          %li.sns_botton facebook
+          %li.sns_botton hatena
+  %aside.col.span_4{ role: "complimentary" }
+    %h3.rankingTitle
+      ☆人気の記事一覧
+    %ul.ranking
+      %li.rankinglist
+        content
+      %li.rankinglist
+        content
+      %li.rankinglist
+        content
+

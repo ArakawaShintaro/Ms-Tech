@@ -1,0 +1,25 @@
+.show_article img {
+  height: 320px;
+  width: 100%;
+}
+
+.show_article_title {
+  padding: 0 30px 15px;
+}
+
+.show_article_title h2 {
+}
+
+.date {
+  font-size: 12px;
+}
+
+.show_article_title ul {
+  border-bottom: 1px solid;
+}
+
+.sns_botton {
+  float: left;
+  color: #4a4a4a;
+  padding-right: 5px;
+}
