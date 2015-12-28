@@ -1,6 +1,6 @@
 = form_for([:admin, @subject]) do |sf|
   .col-md-8.col-md-offset-2
-    %header.row.user-nav.row
+    .row.user-nav.row
       .col-md-12.proto-new
         = sf.text_field :name, placeholder: "名前", class: "proto-new-title"
         = sf.text_field :company, placeholder: "会社", class: "proto-new-title"
