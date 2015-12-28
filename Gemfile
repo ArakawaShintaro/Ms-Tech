@@ -53,3 +53,5 @@ gem 'kaminari'
 gem 'haml-rails'
 gem 'erb2haml'
 gem 'rmagick'
+gem 'qiita-markdown'
+
