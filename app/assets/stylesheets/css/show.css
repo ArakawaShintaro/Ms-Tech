@@ -6,9 +6,9 @@
   padding: 0 30px 15px;
 }
 
-.show_article_title h2 {
+/*.show_article_title h2 {
 }
-
+*/
 .date {
   font-size: 12px;
 }
@@ -21,7 +21,7 @@
   border-bottom: 1px solid #e5e5e5;
   font-size: 14px;
   line-height: 1.8;
-  padding: 55px 30px 30px;
+  padding: 20px 30px 30px;
   clear: both;
 }
 
