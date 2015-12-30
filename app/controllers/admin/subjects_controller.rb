@@ -8,7 +8,7 @@ class Admin::SubjectsController < ApplicationController
   def create
     @subject = Subject.new(subject_params)
     if @subject.save
-      redirect_to new_admin_subject_path, success: 'Success!'
+      redirect_to new_admin_article_path, success: 'Success!'
     else
       redirect_to new_admin_subject_path, warning: 'Failure!'
     end

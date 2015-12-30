@@ -152,3 +152,28 @@ footer {
 	text-align: center;
 	background: #FE4444;
 }
+
+#edit {
+    float: left;
+    overflow: auto;
+    width: 50%;
+    height: 600px;
+    margin: 0;
+    padding: 10px;
+    border: none;
+    resize: none;
+}
+
+#preview {
+    float: right;
+    overflow: auto;
+    width: 50%;
+    height: 600px;
+    margin: 0;
+    padding: 10px;
+    background-color: #EEE;
+}
+
+.right-content{
+  float: left;
+}

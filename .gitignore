@@ -13,3 +13,7 @@
 /tmp
 
 *.jpg
+
+app/assets/javascripts/highlight.js/
+
+app/assets/javascripts/marked/
