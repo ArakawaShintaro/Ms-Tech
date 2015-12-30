@@ -24,4 +24,10 @@ class Admin::SubjectsController < ApplicationController
         thumnails_attributes: [:id, :image, :status])
     end
 
+    def basic
+      authenticate_or_request_with_http_basic do |user, pass|
+      user == 'tech' && pass == 'ms'
+      end
+    end
+
 end

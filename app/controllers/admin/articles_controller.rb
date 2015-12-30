@@ -1,5 +1,7 @@
 class Admin::ArticlesController < ApplicationController
 
+  before_filter :basic
+
   def new
     @article = Article.new
     @subjects = Subject.order(created_at: :desc).limit(5)
@@ -17,6 +19,12 @@ class Admin::ArticlesController < ApplicationController
   private
   def article_params
     params.require(:article).permit(:title, :content, :subject_id)
+  end
+
+  def basic
+    authenticate_or_request_with_http_basic do |user, pass|
+      user == 'tech' && pass == 'ms'
+    end
   end
 
 end
