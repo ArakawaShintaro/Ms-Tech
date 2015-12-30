@@ -1,5 +1,4 @@
 .show_article img {
-  height: 320px;
   width: 100%;
 }
 
@@ -16,6 +15,21 @@
 
 .show_article_title ul {
   border-bottom: 1px solid;
+}
+
+.interview {
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 14px;
+  line-height: 1.8;
+  padding: 55px 30px 30px;
+  clear: both;
+}
+
+.interview p {
+  word-wrap: break-word;
+  font-size: 14px;
+  line-height: 1.8;
+  padding-bottom: 20px;
 }
 
 .sns_botton {
