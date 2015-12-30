@@ -1,2 +1,24 @@
-%p
-  = qiita_markdown(@article.content)
+.content.clearfix.row
+  .new_content.clearfix.col.span_8
+    %article.col.row
+      = link_to '', '#'
+      .show_article.col.row
+        %p.photo
+          = image_tag("http://www.vocarus.net/img/ed1a638dabace57a846b599cc64a9060.jpg")
+      .show_article_title.col.row
+        %h2
+          同志社大学 | 下谷地麻美 | プログラマー
+        %p.date
+          2015/10/22
+        %ul.clearfix
+          %li.sns_botton twitter
+          %li.sns_botton facebook
+          %li.sns_botton hatena
+      .interview
+        %h3
+          インタビュー
+        .interview_content.row
+          %p
+            = qiita_markdown(@article.content)
+
+  = render 'layouts/ranking'

@@ -5,14 +5,4 @@
         ☆おすすめ記事
     %article.col.row
       = render @articles
-  %aside.col.span_4{ role: "complimentary" }
-    %h3.rankingTitle
-      ☆人気の記事一覧
-    %ul.ranking
-      %li.rankinglist
-        content
-      %li.rankinglist
-        content
-      %li.rankinglist
-        content
-
+    = render 'layouts/ranking'

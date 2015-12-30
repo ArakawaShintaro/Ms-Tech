@@ -9,9 +9,10 @@
 body {
 	font-family: sans-serif;
 	color: white;
+  background: #FAFAFA;
 }
 
-p {
+p, span {
 	color: #4a4a4a;
 }
 
@@ -29,6 +30,7 @@ header {
 	line-height: 1.5em;
 	text-align: center;
 	background: #FE4444;
+  /*border-bottom: 1px solid #FAFAFA;*/
 }
 
 .headerInner {
@@ -43,6 +45,10 @@ header {
 	font-size: x-large;
 }
 
+#logo a {
+  text-decoration: none;
+  color: #FFF;
+}
 
 #headerSns {
 	float: right;
@@ -60,6 +66,7 @@ header {
 .content {
 	margin: 0 auto;
 	width: 85%;
+  background: #FFF;
 }
 
 article {
@@ -69,6 +76,8 @@ article {
 }
 
 .new_content {
+  border-right: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .new_content span{
@@ -86,7 +95,7 @@ article {
 }
 
 .new_article:hover {
-	box-shadow: 2px 0px 5px rgba(0,0,0,0.2);
+	box-shadow: 0.1px 0.1px 2px 1px rgba(0,0,0,0.2);
 }
 
 .new_article img {
@@ -119,21 +128,24 @@ aside {
 
 .rankingTitle {
 	margin-bottom: 20px;
+  padding-left: 20px;
 }
 
 .ranking {
-	height: 260px;
+	height: 100%;
 }
 
 .rankinglist {
-	color: black;
+	 color: black;
 	 border-top: 1px solid #e6e6e6;
    padding: 14px 0 14px 20px;
 }
 
 .rankinglist:hover {
-	box-shadow: 0px 0.5px 0.5px rgba(0,0,0,0.6);
+	box-shadow: 0.1px 0.1px 2px 0.1px rgba(0,0,0,0.2);
 }
+
+
 
 footer {
 	line-height: 1.5em;
