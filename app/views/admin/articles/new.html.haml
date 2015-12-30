@@ -1,11 +1,12 @@
-= form_for ([:admin, @article]), html: {class: "clearfix"} do |f|
+= form_for ([:admin, @article]), html: { class: "clearfix" } do |f|
   .col-md-8.col-md-offset-2
-    .row.user-nav.row
+    .row.user-nav.row.right-content
       .col-md-12
         = f.text_field :title, placeholder: "Title", class: "proto-new-title"
       .col-md-12
-        = f.text_area :content, placeholder: "content", cols: "60", rows: "10", class: "border-form"
-      .col-md-12
+        = f.text_area :content, placeholder: "content", cols: "60", rows: "10", class: "border-form", id: "edit"
+      .col-md-12.right-content
         = f.collection_select :subject_id , Subject.all.limit(5), :id, :name
-      .col-md-12
+      .col-md-12.right-content
         = f.submit "publish"
+    .row.user-nav.left-content#preview
